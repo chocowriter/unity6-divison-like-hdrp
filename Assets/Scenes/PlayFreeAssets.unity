@@ -452,6 +452,18 @@ MonoBehaviour:
   m_ObsoleteUseShadowQualitySettings: 0
   m_ObsoleteCustomShadowResolution: 512
   m_ObsoleteContactShadows: 0
+--- !u!114 &483656258 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114602481244817218, guid: ed965125ff6f3a44d84d71a0e4769abb,
+    type: 3}
+  m_PrefabInstance: {fileID: 483656254}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ead9567750bdfc04691f8392c56e59f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &608835210
 GameObject:
   m_ObjectHideFlags: 0
@@ -886,6 +898,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 879632707}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &879632709 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114272279691959126, guid: d0bb8554e084b9145bde7ebcdc944949,
+    type: 3}
+  m_PrefabInstance: {fileID: 879632707}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ead9567750bdfc04691f8392c56e59f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1028815541
 GameObject:
   m_ObjectHideFlags: 0
@@ -1551,6 +1575,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114107379585428848, guid: 59e8e266ec83fd34b8885035b9213f52,
+        type: 3}
+      propertyPath: m_CurrentWeapon
+      value: 
+      objectReference: {fileID: 879632709}
+    - target: {fileID: 114107379585428848, guid: 59e8e266ec83fd34b8885035b9213f52,
+        type: 3}
+      propertyPath: 'm_WeaponsList.Array.data[0]'
+      value: 
+      objectReference: {fileID: 483656258}
+    - target: {fileID: 114107379585428848, guid: 59e8e266ec83fd34b8885035b9213f52,
+        type: 3}
+      propertyPath: 'm_WeaponsList.Array.data[1]'
+      value: 
+      objectReference: {fileID: 879632709}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2156,15 +2195,15 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1430843523}
   - {fileID: 790166017}
   - {fileID: 432432461}
   - {fileID: 1898772529}
   - {fileID: 459915046}
-  - {fileID: 1233359158}
   - {fileID: 2123518749}
   - {fileID: 2131021205}
-  - {fileID: 1407664154}
   - {fileID: 1548615737}
   - {fileID: 1318075776}
   - {fileID: 1827180359}
-  - {fileID: 1430843523}
+  - {fileID: 1233359158}
+  - {fileID: 1407664154}
