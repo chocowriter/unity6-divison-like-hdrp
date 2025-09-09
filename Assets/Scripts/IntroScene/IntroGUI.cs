@@ -107,7 +107,7 @@ namespace DivisionLike
 
         private void OnClickTrainingButton()
         {
-            //SceneController.instance.LoadScene(SceneName.Training);
+            SceneController.instance.LoadScene(SceneName.Training);
         }
 
         private void OnClickOptionButton()
@@ -116,7 +116,7 @@ namespace DivisionLike
 
         private void OnClickGithubButton()
         {
-            Application.OpenURL("https://github.com/ddayin/Unity-DivisionLike");
+            Application.OpenURL("https://github.com/ddayin/Unity6-DivisonLike-HDRP");
         }
 
         /// <summary>
@@ -141,7 +141,7 @@ namespace DivisionLike
 
         IEnumerator LoadScene(bool isFreeAssets)
         {
-            /*SceneName sceneName = SceneName.PlayPaidAssets;
+            SceneName sceneName = SceneName.PlayPaidAssets;
             
             if (isFreeAssets == true)
             {
@@ -171,7 +171,6 @@ namespace DivisionLike
                     yield break;
                 }
             }
-            */
 
             yield break;
         }
