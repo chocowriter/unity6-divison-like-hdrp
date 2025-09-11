@@ -1,12 +1,9 @@
 ﻿using UnityEngine;
-using System.Collections;
 using Random = UnityEngine.Random;
 
 namespace DivisionLike
 {
-    /// <summary>
-    /// 사운드 처리
-    /// </summary>
+    /// <summary> 사운드 처리 </summary>
     public class SoundController : MonoBehaviour
     {
         public static SoundController instance { get; private set; }
@@ -16,9 +13,7 @@ namespace DivisionLike
             instance = this;
         }
 
-        /// <summary>
-        /// 해당 사운드를 재생한다.
-        /// </summary>
+        /// <summary> 해당 사운드를 재생한다. </summary>
         /// <param name="audioS"></param>
         /// <param name="clip"></param>
         /// <param name="randomizePitch"></param>
@@ -37,9 +32,7 @@ namespace DivisionLike
             audioS.Play();
         }
 
-        /// <summary>
-        /// 해당 오디오 클립을 생성하여 재생한다.
-        /// </summary>
+        /// <summary> 해당 오디오 클립을 생성하여 재생한다. </summary>
         /// <param name="pos"></param>
         /// <param name="clip"></param>
         /// <param name="time"></param>

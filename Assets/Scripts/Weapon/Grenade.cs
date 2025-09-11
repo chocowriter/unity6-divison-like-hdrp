@@ -12,7 +12,7 @@ namespace DivisionLike
     {
         private Collider[] m_HitColliders;
         private GameObject m_Explosion;
-        private cakeslice.Outline m_Outline;
+        private Outline m_Outline;
 
         public GameObject m_ExplosionPrefab;
 
@@ -25,7 +25,7 @@ namespace DivisionLike
         void Awake()
         {
             //_explosion = transform.Find( "Explosion" ).gameObject;
-            m_Outline = transform.Find("WPN_MK2Grenade").GetComponent<cakeslice.Outline>();
+            m_Outline = transform.Find("WPN_MK2Grenade").GetComponent<Outline>();
 
             //_explosion.SetActive( false );
 

@@ -26,7 +26,7 @@ using UnityEngine;
 using System.Linq;
 using System.Collections.Generic;
 
-namespace cakeslice
+namespace DivisionLike
 {
     [RequireComponent(typeof(Renderer))]
     public class Outline : MonoBehaviour

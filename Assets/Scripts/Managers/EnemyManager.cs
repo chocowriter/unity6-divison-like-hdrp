@@ -2,9 +2,7 @@
 
 namespace DivisionLike
 {
-    /// <summary>
-    /// 적 관리자
-    /// </summary>
+    /// <summary> 적 관리자 </summary>
     public class EnemyManager : MonoBehaviour
     {
         public GameObject m_Enemy; // The enemy prefab to be spawned.
@@ -20,18 +18,14 @@ namespace DivisionLike
             }
         }
 
-        /// <summary>
-        /// 일정 시간 반복해서 적을 생성한다.
-        /// </summary>
+        /// <summary> 일정 시간 반복해서 적을 생성한다. </summary>
         private void StartToSpawn()
         {
             // Call the Spawn function after a delay of the spawnTime and then continue to call after the same amount of time.
             InvokeRepeating("Spawn", m_SpawnTime, m_SpawnTime);
         }
 
-        /// <summary>
-        /// 적을 생성한다.
-        /// </summary>
+        /// <summary> 적을 생성한다. </summary>
         void Spawn()
         {
             // If the player has no health left...

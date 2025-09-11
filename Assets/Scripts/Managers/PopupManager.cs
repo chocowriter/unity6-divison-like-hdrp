@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Reflection;
 using UnityEngine;
 using WanzyeeStudio;
 
 namespace DivisionLike
 {
+    /// <summary> 팝업 관리자 </summary>
     public class PopupManager : BaseSingleton<PopupManager>
     {
         [SerializeField] private Transform m_ParentCanvas;

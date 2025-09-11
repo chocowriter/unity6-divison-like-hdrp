@@ -54,7 +54,7 @@ public class InstanceExample : MonoBehaviour
 		/// -----------------------------
 		Destroy(
 			newParticleSystem.gameObject,
-			newParticleSystem.startLifetime
+			newParticleSystem.main.startLifetimeMultiplier
 		);
 
 		return newParticleSystem;

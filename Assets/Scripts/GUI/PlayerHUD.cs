@@ -1,15 +1,14 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using WanzyeeStudio;
 
 namespace DivisionLike
 {
     /// <summary>
     /// 플레이어의 HUD
     /// </summary>
-    public class PlayerHUD : MonoBehaviour
+    public class PlayerHUD : BaseSingleton<PlayerHUD>
     {
-        public static PlayerHUD instance { get; private set; }
-
         private Slider[] m_HealthSlider = new Slider[3];
 
         private Text m_ClipAmmoText;
@@ -24,10 +23,10 @@ namespace DivisionLike
 
         #region MonoBehaviour
 
-        void Awake()
+        protected override void Awake()
         {
-            instance = this;
-
+            base.Awake();
+            
             m_HealthSlider[0] = transform.Find("PlayerHUD/HealthUI/HealthSlider_0").GetComponent<Slider>();
             m_HealthSlider[1] = transform.Find("PlayerHUD/HealthUI/HealthSlider_1").GetComponent<Slider>();
             m_HealthSlider[2] = transform.Find("PlayerHUD/HealthUI/HealthSlider_2").GetComponent<Slider>();
@@ -40,7 +39,7 @@ namespace DivisionLike
             m_GrenadeNumberText = transform.Find("PlayerHUD/Grenade/NumberText").GetComponent<Text>();
         }
 
-        private void Start()
+        void Start()
         {
             m_WeaponHandler = Player.instance.m_WeaponHandler;
 

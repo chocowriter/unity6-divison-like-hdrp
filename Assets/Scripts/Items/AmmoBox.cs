@@ -9,7 +9,7 @@ namespace DivisionLike
     /// </summary>
     public class AmmoBox : MonoBehaviour
     {
-        private cakeslice.Outline m_Outline;
+        private Outline m_Outline;
         private float m_Timer = 0f;
         public float m_KeyPressTime = 3f;
 
@@ -24,7 +24,7 @@ namespace DivisionLike
 
         private void Awake()
         {
-            m_Outline = transform.GetComponent<cakeslice.Outline>();
+            m_Outline = transform.GetComponent<Outline>();
             m_Outline.enabled = true;
         }
 

@@ -23,29 +23,15 @@
 */
 
 using UnityEngine;
-using System.Collections.Generic;
+using WanzyeeStudio;
+using cakeslice;
 
-namespace cakeslice
+namespace DivisionLike
 {
     [DisallowMultipleComponent]
     [RequireComponent(typeof(Camera))]
-    public class OutlineEffect : MonoBehaviour
+    public class OutlineEffect : BaseSingleton<OutlineEffect>
     {
-        private static OutlineEffect m_instance;
-        public static OutlineEffect Instance
-        {
-            get
-            {
-                if(Equals(m_instance, null))
-                {
-                    return m_instance = FindObjectOfType(typeof(OutlineEffect)) as OutlineEffect;
-                }
-
-                return m_instance;
-            }
-        }
-        private OutlineEffect() { }
-
 		private readonly LinkedSet<Outline> outlines = new LinkedSet<Outline>();
         private const int outlineLayer = 6;
 
@@ -92,6 +78,11 @@ namespace cakeslice
         Material[] outline2MaterialBuffer = new Material[20];
         Material[] outline3MaterialBuffer = new Material[20];
         Material[] eraseMaterialBuffer = new Material[20];
+        
+        protected override void Awake()
+        {
+            base.Awake();
+        }
 
         Material[] GetMaterialBufferFromID(int ID)
         {
@@ -115,11 +106,6 @@ namespace cakeslice
             m.DisableKeyword("_ALPHAPREMULTIPLY_ON");
             m.renderQueue = 3000;
             return m;
-        }
-
-        private void Awake()
-        {
-            m_instance = this;
         }
 
         void Start()

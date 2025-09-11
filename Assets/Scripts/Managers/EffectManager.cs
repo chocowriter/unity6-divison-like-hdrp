@@ -1,30 +1,28 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using WanzyeeStudio;
 
 namespace DivisionLike
 {
     /// <summary>
     /// 이펙트 관리자
     /// </summary>
-    public class EffectManager : MonoBehaviour
+    public class EffectManager : BaseSingleton<EffectManager>
     {
-        public static EffectManager instance { get; private set; }
-
         public GameObject[] m_ParticlePrefabs = new GameObject[8];
         private Transform m_ParticleParent;
 
         private Dictionary<int, ParticleSystem> m_EffectDic = new Dictionary<int, ParticleSystem>();
         private int m_IndexDic = 0;
 
-        private void Awake()
+        protected override void Awake()
         {
-            instance = this;
+            base.Awake();
+            
             m_ParticleParent = transform.Find("ParticleParent");
         }
 
-        /// <summary>
-        /// 지정된 위치에 해당 인덱스의 파티클을 생성한다.
-        /// </summary>
+        /// <summary> 지정된 위치에 해당 인덱스의 파티클을 생성한다. </summary>
         /// <param name="index"></param>
         /// <param name="position"></param>
         public void CreateParticle(int index, Vector3 position)
@@ -39,9 +37,7 @@ namespace DivisionLike
             m_IndexDic++;
         }
 
-        /// <summary>
-        /// 해당 인덱스의 파티클을 반환한다.
-        /// </summary>
+        /// <summary> 해당 인덱스의 파티클을 반환한다. </summary>
         /// <param name="index"></param>
         /// <returns></returns>
         public ParticleSystem GetParticle(int index)

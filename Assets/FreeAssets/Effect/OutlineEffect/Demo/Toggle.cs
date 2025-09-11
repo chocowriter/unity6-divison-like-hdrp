@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace cakeslice
+namespace DivisionLike
 {
     public class Toggle : MonoBehaviour
     {

@@ -18,7 +18,7 @@ public class MapCanvasController : MonoBehaviour
         {
             if (!_instance)
             {
-                MapCanvasController[] controllers = GameObject.FindObjectsOfType<MapCanvasController>();
+                MapCanvasController[] controllers = GameObject.FindObjectsByType<MapCanvasController>(FindObjectsSortMode.None);
 
                 if (controllers.Length != 0)
                 {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using cakeslice;
 
-namespace cakeslice
+namespace DivisionLike
 {
     public class OutlineAnimation : MonoBehaviour
     {

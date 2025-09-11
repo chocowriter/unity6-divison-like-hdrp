@@ -9,9 +9,7 @@ using WanzyeeStudio;
 
 namespace DivisionLike
 {
-    /// <summary>
-    /// 일시 정지 관리자
-    /// </summary>
+    /// <summary> 일시 정지 관리자 </summary>
     public class PauseManager : BaseSingleton<PauseManager>
     {
         private Canvas m_Canvas;
@@ -74,9 +72,7 @@ namespace DivisionLike
             ShowMouseCursor(false);
         }
 
-        /// <summary>
-        /// 일시 정지
-        /// </summary>
+        /// <summary> 일시 정지 </summary>
         public void Pause()
         {
             m_IsPaused = !m_IsPaused;
@@ -93,9 +89,7 @@ namespace DivisionLike
             ShowMouseCursor(m_IsPaused);
         }
 
-        /// <summary>
-        /// 마우스 커서를 보일 것인지
-        /// </summary>
+        /// <summary> 마우스 커서를 보일 것인지 </summary>
         /// <param name="isShow"></param>
         private void ShowMouseCursor(bool isShow)
         {
@@ -117,9 +111,7 @@ namespace DivisionLike
             //SceneController.instance.LoadScene(SceneName.Intro);
         }
 
-        /// <summary>
-        /// 안내 이미지 표시
-        /// </summary>
+        /// <summary> 안내 이미지 표시 </summary>
         private void ShowIntruction()
         {
             m_IsVisibleInstruction = true;

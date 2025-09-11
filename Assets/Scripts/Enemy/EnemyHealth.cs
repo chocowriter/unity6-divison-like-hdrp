@@ -24,7 +24,7 @@ namespace DivisionLike
         private bool m_IsDead; // Whether the enemy is dead.
         private bool m_IsSinking; // Whether the enemy has started sinking through the floor.
 
-        public cakeslice.Outline m_Outline;
+        public Outline m_Outline;
         private Transform m_Transform;
 
         void Awake()

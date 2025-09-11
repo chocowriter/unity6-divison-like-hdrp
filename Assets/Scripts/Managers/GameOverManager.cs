@@ -2,9 +2,7 @@
 
 namespace DivisionLike
 {
-    /// <summary>
-    /// 게임 오버 관리자
-    /// </summary>
+    /// <summary> 게임 오버 관리자 </summary>
     public class GameOverManager : MonoBehaviour
     {
         public bool m_IsImortalMode = false;
