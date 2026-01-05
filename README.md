@@ -32,14 +32,7 @@ https://github.com/user-attachments/assets/cce652bf-2088-4db2-9cc6-4a7fbf413998
 - add inventory system
 - add various weapons
 
-# PC Specification
-- OS : Windows 11 64bit
-- CPU : AMD Ryzen 9 5900X 12-Core
-- RAM : 64GB
-- SSD : Samsung SSD 870 QVO 1TB
-- GPU : NVIDIA GeForce RTX 3060
-
-# Development Tools (11/20/2025)
-- Engine : Unity 6000.2.13f1
+# Development Tool
+- Engine : Unity 6000.3.2f1 LTS
 - Programming Language : C#
 - IDE : Visual Studio 2026 Community
