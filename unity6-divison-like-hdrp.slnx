@@ -1,0 +1,8 @@
+﻿<Solution>
+  <Project Path="LeanTransition.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="LeanCommon.csproj" />
+  <Project Path="Wooshii.HierarchyDecorator.Editor.csproj" />
+  <Project Path="WanzyeeStudio.Runtime.csproj" />
+  <Project Path="Assembly-CSharp-Editor.csproj" />
+</Solution>
