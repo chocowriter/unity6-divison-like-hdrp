@@ -7,9 +7,9 @@ namespace DivisionLike
     /// <summary>
     /// 인트로 씬
     /// </summary>
-    public class IntroScene : MonoBehaviour
+    public class TitleScene : MonoBehaviour
     {
-        [SerializeField] private IntroGUI m_IntroGUI;
+        [SerializeField] private TitleUI mTitleUI;
 
         private void Awake()
         {
@@ -34,7 +34,7 @@ namespace DivisionLike
 
             if (Input.GetKeyDown(KeyCode.Space) == true || Input.GetKeyDown(KeyCode.Return) == true)
             {
-                m_IntroGUI.LoadPlayScene(true);
+                mTitleUI.LoadPlayScene();
             }
         }
     }
