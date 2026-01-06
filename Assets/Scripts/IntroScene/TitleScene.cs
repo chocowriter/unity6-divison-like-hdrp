@@ -4,12 +4,9 @@ using UnityEngine;
 
 namespace DivisionLike
 {
-    /// <summary>
-    /// 인트로 씬
-    /// </summary>
     public class TitleScene : MonoBehaviour
     {
-        [SerializeField] private TitleUI mTitleUI;
+        [SerializeField] private TitleUI m_TitleUI;
 
         private void Awake()
         {
@@ -21,20 +18,12 @@ namespace DivisionLike
         {
             ProcessKeyInput();
         }
-
-        /// <summary>
-        /// 키 입력 처리
-        /// </summary>
+        
         private void ProcessKeyInput()
         {
             if (Input.GetKeyDown(KeyCode.Escape) == true)
             {
                 Application.Quit();
-            }
-
-            if (Input.GetKeyDown(KeyCode.Space) == true || Input.GetKeyDown(KeyCode.Return) == true)
-            {
-                mTitleUI.LoadPlayScene();
             }
         }
     }

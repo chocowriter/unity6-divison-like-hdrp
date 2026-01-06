@@ -8,7 +8,7 @@ namespace DivisionLike
     public class SceneController : BaseSingleton<SceneController>
     {
         /// <summary> 현재 실행 중인 씬의 이름 </summary>
-        [SerializeField] private SceneName m_CurrentSceneName = SceneName.Intro;
+        [SerializeField] private SceneName m_CurrentSceneName = SceneName.Title;
 
         public SceneName CurrentScene
         {

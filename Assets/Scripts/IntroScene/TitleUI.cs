@@ -65,9 +65,6 @@ namespace DivisionLike
             Application.OpenURL("https://github.com/chocowriter/unity6-divison-like-hdrp");
         }
 
-        /// <summary>
-        /// 종료 버튼을 클릭하면 게임 어플리케이션을 종료한다.
-        /// </summary>
         private void OnClickQuitButton()
         {
             Application.Quit();
@@ -87,7 +84,7 @@ namespace DivisionLike
 
         IEnumerator LoadScene()
         {
-            SceneName sceneName = SceneName.PlayPaidAssets;
+            SceneName sceneName = SceneName.SinglePlay;
             
             AsyncOperation operation = SceneController.instance.LoadSceneAsyn(sceneName);
             operation.allowSceneActivation = false;
