@@ -27,5 +27,5 @@ namespace DivisionLike
             m_Text.color = Color.white;
             this.transform.localPosition += new Vector3(0, 0f, 40f);
         }
-    }    
+    }
 }
