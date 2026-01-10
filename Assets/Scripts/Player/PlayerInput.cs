@@ -85,8 +85,6 @@ namespace DivisionLike
         void Update()
         {
             if (m_EnableInput == false) return;
-            if (PauseManager.instance == null) return;
-            if (PauseManager.instance.m_IsPaused == true) return;
 
             CharacterLogic();
             CameraLookLogic();
