@@ -54,7 +54,8 @@ GameObject:
   - component: {fileID: 114774562876285040}
   - component: {fileID: 114314024353467972}
   - component: {fileID: 114240784401299112}
-  - component: {fileID: 3914619800472176215}
+  - component: {fileID: 2817462703368238158}
+  - component: {fileID: 2797559965027815720}
   - component: {fileID: 82168656781489022}
   m_Layer: 0
   m_Name: MilitaryPlayer
@@ -289,7 +290,7 @@ MonoBehaviour:
     type: 3}
   m_UserSettings:
     m_ThrowForce: 100
---- !u!114 &3914619800472176215
+--- !u!114 &2817462703368238158
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -298,37 +299,40 @@ MonoBehaviour:
   m_GameObject: {fileID: 1008780008236374}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44a50cdeca5540c499c3544d496936b4, type: 3}
+  m_Script: {fileID: 11500000, guid: 02ebfa2e42ebd4c8abdc708a24f5b934, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
-  m_InputSettings:
-    m_VerticalAxis: Vertical
-    m_HorizontalAxis: Horizontal
-    m_JumpButton: Jump
-    m_ReloadButton: Reload
-    m_AimButton: Fire2
-    m_FireButton: Fire1
-    m_SwitchWeaponButton: Fire3
-    m_PrimaryWeaponButton: 1
-    m_SecondaryWeaponButton: 2
-    m_SidearmButton: 3
-    m_SprintButton: Sprint
-    m_MedikitButton: Medikit
-    m_GrenadeButton: Grenade
-  m_OtherSettings:
-    m_LookSpeed: 5
-    m_LookDistance: 30
-    m_RequireInputForTurn: 1
-    m_AimDetectionLayers:
-      serializedVersion: 2
-      m_Bits: 0
-  m_DebugAim: 0
-  m_SpineTransform: {fileID: 4568949691163028}
-  m_IsAiming: 0
-  m_IsFiring: 0
-  m_IsSprinting: 0
-  m_IsGrenadeMode: 0
-  m_EnableInput: 1
+  m_EditorClassIdentifier: Assembly-CSharp::DivisionLike.PlayerNewInput
+--- !u!114 &2797559965027815720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008780008236374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
+  m_Actions: {fileID: -944628639613478452, guid: 90b21b96b31054f7a8e93abdc06b8527,
+    type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Mouse
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!82 &82168656781489022
 AudioSource:
   m_ObjectHideFlags: 0
