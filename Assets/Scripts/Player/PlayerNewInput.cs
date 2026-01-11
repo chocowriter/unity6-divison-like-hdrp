@@ -18,18 +18,22 @@ namespace DivisionLike
         [SerializeField] public OtherSettings m_OtherSettings;
 
         private Camera m_TPSCamera;
-        private Transform m_CenterTransform;
-
-        public bool m_DebugAim = false;
+        private Dictionary<Weapon, GameObject> m_CrosshairPrefabMap = new Dictionary<Weapon, GameObject>();
+        
+        [Space(10)]
+        [Header("Transforms")]
         public Transform m_SpineTransform;
+        
+        [Header("Player States")]
         public bool m_IsAiming = false;
         public bool m_IsFiring = false;
         public bool m_IsSprinting = false;
         public bool m_IsGrenadeMode = false;
 
-        private Dictionary<Weapon, GameObject> m_CrosshairPrefabMap = new Dictionary<Weapon, GameObject>();
-
-        public bool m_EnableInput = true; // 입력이 가능한지
+        [Header("Debug")]
+        public bool m_EnableInput = true;
+        public bool m_DebugAim = false;
+        
         
         void OnLeftClick()
         {
