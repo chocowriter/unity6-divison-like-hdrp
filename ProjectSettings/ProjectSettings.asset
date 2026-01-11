@@ -167,7 +167,7 @@ PlayerSettings:
   androidMinAspectRatio: 1
   applicationIdentifier:
     Android: com.Company.ProductName
-    Standalone: com.ddayin.DivisionLike
+    Standalone: com.ddayin.Division-Like
     Tizen: com.Company.ProductName
     iPhone: com.Company.ProductName
     tvOS: com.Company.ProductName
@@ -1055,7 +1055,7 @@ PlayerSettings:
   qnxGraphicConfPath: 
   apiCompatibilityLevel: 6
   captureStartupLogs: {}
-  activeInputHandler: 2
+  activeInputHandler: 1
   windowsGamepadBackendHint: 0
   cloudProjectId: 43344f74-29d6-40b8-84d8-5ff99cdea8e0
   framebufferDepthMemorylessMode: 0
